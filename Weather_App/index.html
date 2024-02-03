@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="search">
+                <input
+                    type="text"
+                    placeholder="Enter your city name"
+                    id="searchBox"
+                    autocomplete="on"
+                    spellcheck="false"
+                />
+                <button id="searchBtn">
+                    <img src="./images/search.png" alt="search button" />
+                </button>
+            </div>
+            <div class="right-city" id="right-city-id" ><p>Please enter a Valid City Name</p></div>
+            <div class="weather">
+                <img
+                    src="./images/mist.png"
+                    alt="weather"
+                    class="weather-img"
+                />
+                <div id="temp">0&deg;C</div>
+                <div id="city">India</div>
+                <div class="wind-humidity">
+                    <div class="humidity">
+                        <img
+                            id="humidity-img"
+                            src="./images/humidity.png"
+                            alt="humidity"
+                        />
+                        <div class="hmd">
+                            <p class="wind-humd" id="humid">100%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="wind">
+                        <img id="wind-img" src="./images/wind.png" alt="wind" />
+                        <div class="wind-value hmd">
+                            <p class="wind-humd" id="spd">0Km/hr</p>
+                            <p>Wind Speed</p>
+                        </div>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
