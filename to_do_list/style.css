@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #11998e, #537895);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.to-do-app {
+    /* height: 50vh; */
+    width: 35vw;
+    background-color: #ebfffc;
+    border-radius: 20px;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    line-height: 1.2em;
+    color: #222;
+}
+.to-do-list-header {
+    width: 100%;
+    height: 13.2vh;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+#to-do-list-img {
+    width: 4vw;
+    height: 7vh;
+}
+.to-do-list-add {
+    background-color: #edeef0;
+    display: flex;
+    border: none;
+    justify-content: space-between;
+    height: 2em;
+    border-radius: 20px;
+}
+#to-do-add {
+    width: 100%;
+    margin: 0px 45px;
+    background-color: #edeef0;
+    font-weight: 500;
+    border: none;
+    font-family: "Space Mono", monospace;
+    background: transparent;
+    border-radius: 20px;
+    outline: none;
+}
+.add {
+    width: 6em;
+    letter-spacing: 1.5px;
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 1.3em;
+    background-color: #fc8019;
+    border: none;
+    border-radius: 20px;
+    color: #ebfffc;
+    cursor: pointer;
+}
+.add:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out, transform 0.5s ease;
+}
+ul li {
+    list-style: none;
+    width: 100%;
+    margin-top: 20px;
+    padding: 11px 8px 12px 50px;
+    font-weight: 400;
+    color: #222;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+ul li::before {
+    content: "";
+    background-size: cover;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    background-position: center;
+}
+ul li.done::before {
+    background-image: url(images/checked.png);
+    text-decoration: line-through;
+}
+ul li.done {
+    text-decoration: line-through;
+    font-weight: 200 !important;
+    color: #777;
+}
+li {
+    display: inline-flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    max-width: 35vw;
+}
