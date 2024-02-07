@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* background: linear-gradient(90deg, #7f7fd5, #91eae4) !important; */
+    /* #1da11f2 */
+}
+body {
+    /* background: linear-gradient(90deg, #7f7fd5, #91eae4) !important; */
+    background: linear-gradient(135deg, #06beb6, #48b1bf);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.quote-container {
+    background-color: #fff;
+    min-height: 45vh;
+    max-height: 60vh;
+    width: 35vw;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px #1da1f2;
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px !important;
+    overflow-y:auto;
+}
+.quote-container > h1 {
+    margin-bottom: 16px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #1da1f2;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 2.2em;
+}
+.quote {
+    font-size: 1.7em;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-style: normal;
+    padding-bottom: 30px;
+    padding: 0px 10px;
+}
+.author {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    text-align: right;
+    padding-right: 20px;
+}
+.btn-container {
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+button {
+    background-color: #1da1f2;
+    outline: none;
+    border: none;
+    height: 2.9em;
+    width: 8em;
+    border-radius: 25px;
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    line-height: 1.2em;
+    cursor: pointer;
+    text-align: center;
+    /* padding: 10px; */
+}
+.twitter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100px; */
+    gap: 3px;
+}
+button#tweet {
+    background-color: #fff;
+    border: 1px solid #1da1f2;
+    color: #1da1f2;
+    /* padding-bottom: 20px; */
+}
+button span {
+    justify-content: center;
+}
+button#tweet img {
+    height: 18px;
+}
