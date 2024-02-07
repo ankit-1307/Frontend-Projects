@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: linear-gradient(90deg, #ee9ca7, #ffdde1);
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/wave.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+button {
+    background-color: #e0115f;
+    outline: none;
+    border: none;
+    height: 3.2em;
+    width: 10em;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+button:hover {
+    background-color: #dc143c !important;
+}
+.flex-toast {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    overflow-y: auto;
+    width: 100%;
+    margin-right: 30px;
+}
+.toast-box {
+    align-self: flex-end;
+    height: 7vh;
+    width: 28vw;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: none;
+    text-align: center;
+    position: relative;
+    /* padding-top: 30px; */
+    /* width: 150px; */
+    /* border: 1px solid black; */
+}
+.toast-box.success::after {
+    content: "";
+    background-color: green;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: anim 5s linear forwards;
+}
+/* .toast-box::after {
+    content: "";
+    background-color: green;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+} */
+.btn-container {
+    display: flex;
+}
+p {
+    padding-top: 14px;
+}
+.success {
+    color: green;
+    /* border-radius: 50%; */
+}
+.error {
+    color: red;
+    /* border-radius: 50%; */
+}
+.toast-box.error::after {
+    content: "";
+    background-color: red;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: anim 5s linear forwards;
+}
+.toast-box.invalid::after {
+    content: "";
+    background-color: orange;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: anim 5s linear forwards;
+}
+.invalid {
+    color: orange;
+    /* border-radius: 50%; */
+}
+@keyframes anim {
+    100% {
+        width: 0;
+    }
+}
