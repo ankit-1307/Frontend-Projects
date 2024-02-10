@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Input Form validation</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <form action="">
+                <div class="form-submit-img">
+                    <img
+                        src="./images/form-submit.svg"
+                        alt="form submit"
+                        class=""
+                    />
+                </div>
+                <div class="form-input">
+                    <label for="fname">First Name</label>
+                    <input
+                        type="text"
+                        id="fname"
+                        placeholder="Enter your First name"
+                        value=""
+                    />
+                    <div class="wrapper f-error">
+                        <span class="">Invalid first name</span>
+                        <img src="./images/circle-xmark-regular.svg" />
+                    </div>
+                </div>
+                <div class="form-input">
+                    <label for="lname">Last Name</label>
+                    <input
+                        type="text"
+                        id="lname"
+                        placeholder="Enter your Last name"
+                    />
+                    <div class="wrapper l-error">
+                        <span class="">Invalid last name</span>
+                        <img src="./images/circle-xmark-regular.svg" />
+                    </div>
+                </div>
+                <div class="form-input">
+                    <label for="email">Email Id</label>
+                    <input
+                        type="text"
+                        id="email"
+                        placeholder="Enter your Email Id"
+                    />
+                    <div class="wrapper e-error">
+                        <span class="">Invalid Email</span>
+                        <img src="./images/circle-xmark-regular.svg" />
+                    </div>
+                </div>
+                <div class="form-input">
+                    <label for="msg">Message</label>
+                    <textarea
+                        type="text"
+                        placeholder="Enter your Message here..."
+                        id="msg"
+                    ></textarea>
+                    <div class="wrapper m-error">
+                        <span class="">Invalid message</span>
+                        <img src="./images/circle-xmark-regular.svg" />
+                    </div>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" id="submit-btn">Submit</button>
+                </div>
+            </div>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>
